@@ -5,7 +5,7 @@ import {
   ListItem,
   ListItemText,
   ListSubheader,
-  ListItemIcon,
+  // ListItemIcon,
   // Box,
   // CircularProgress,
 } from '@mui/material';
@@ -51,20 +51,6 @@ const Sidebar = ({ setMobileOpen }) => {
       <List>
         <ListSubheader>Categories</ListSubheader>
         {categories.map(({ label, value }) => (
-          <Link key={value} className={classes.links} to="/">
-            <ListItem onClick={() => {}} ButtonBase>
-              <ListItemIcon>
-                <img src={redLogo} className={classes.genreImage} height={30} />
-              </ListItemIcon>
-              <ListItemText primary={label} />
-            </ListItem>
-          </Link>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        <ListSubheader>Categories</ListSubheader>
-        {demoCategories.map(({ label, value }) => (
           <Link key={value} className={classes.links} to="/">
             <ListItem onClick={() => {}} ButtonBase>
               {/*
