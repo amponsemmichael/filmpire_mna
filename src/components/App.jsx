@@ -1,8 +1,12 @@
 import React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+// import { Route, Switch } from 'react-router-dom';
 
 const App = () => (
   <div>
-    <h1>Welcome, to filmPire App</h1>
+    <CssBaseline />
+    <h1> Movie App </h1>
   </div>
 );
+
 export default App;
